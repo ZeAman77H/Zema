@@ -1,0 +1,123 @@
+body{
+    font-family: Nyala, 'Open Sans', Arial, Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    background: linear-gradient(to right, #f4f4f4, #fefefe);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #3f3f3f;
+    color: #ffffff;
+    width:100%;
+    padding:0;
+    margin: 0;
+    top: 0;
+    text-align: center;
+    
+}
+section div{
+    width:94%;
+    margin:0;
+    padding: 0;
+    
+}
+section{
+    border: solid black 2px;
+    border-radius: 5px;
+    min-width: 85%;
+    max-width: 95%;
+    margin: 1%;
+    padding: 10px;
+    background: radial-gradient(circle, #ee9, #dd7);
+    position: relative;
+    opacity: 0.9;
+    text-align: justify;
+
+    /* Multi-column layout */
+    column-width: 225px;
+    column-rule: 2px outset #f0f0af;
+    column-gap: 40px;
+}
+
+
+section h2{
+    margin-top:15px;
+    margin-left: 5px;
+    padding: 5px;
+    color: #a1b;
+    display:block;
+}
+main {
+    background-color: #dd7;
+    min-width: 320px;
+    max-width:97%; 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 5px;
+    padding-bottom: 50px;
+    border: solid black 1px;
+    box-shadow: 0 0 10px rgba(174, 0, 255, 0.5);
+}
+
+/* When the width becomes 700px or smaller */
+@media (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr; /* 1 column when width is 320px or less */
+    }
+}
+
+#description {
+    background-color: #dd7;
+    color: #a1b;
+    text-align: center;
+    padding:0;
+    margin: 0;
+
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+div ul ul{
+    display:none;
+}
+div ul ul li{
+    border: solid black 1px;
+    margin: 0.5%;
+}
+div ul{
+    list-style: none;
+    margin-top: 0;
+}
+
+div a{
+    color:#000;
+    cursor: pointer;
+    display:block;
+    font-weight: bold;
+    margin-left: 0;
+    padding: 2px 2px 2px 17px;
+    /*width: 100%;112px;*/
+}
+
+div ul a{
+    background: #dd7;
+    border-top: 1px solid #fff;
+    color: #000;
+    display: block;
+    font-weight: normal;
+    padding: 2px 2px 2px 2px;
+}
+
+div ul a:link{
+    font-weight: normal;
+}
+div ul a:hover{
+    background : #ee9;/*#f5f5f5;*/
+    text-decoration: underline;
+}
